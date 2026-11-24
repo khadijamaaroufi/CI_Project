@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Nettoyage Workspace') {
-            steps {
-                deleteDir()
-            }
-        }
         stage('Clonage') {
             steps {
                 git branch: 'main',
